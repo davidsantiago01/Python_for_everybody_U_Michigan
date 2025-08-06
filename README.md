@@ -10,7 +10,7 @@ A record of my learning journey, inspired by Professor Charles Severance’s Pyt
 - Using Python to Access Web Data
 - Using Databases with Python
 - Capstone: Retrieving, Processing, and Visualizing Data with Python
-- To access the official course materials, please visit:
+  
 
 ## Official Source
 https://www.coursera.org/specializations/python
