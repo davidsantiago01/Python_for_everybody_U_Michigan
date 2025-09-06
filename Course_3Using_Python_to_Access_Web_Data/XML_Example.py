@@ -1,1 +1,42 @@
+#XML_Example
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Address">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Recipient" type="xs:string/>
+        <xs:element name="House" type="xs:string/>
+        <xs:element name="Street" type="xs:string/>
+        <xs:element name="Town" type="xs:string/>
+        <xs:element minOccurs="0" name="County" type="xs:string/>
+        <xs:element name="PostCode" type="xs:string/>
+        <xs:element name="Country" 
+          <xs:simpleType>
+            <xs:restriction base="xs:string>
+              <xs:enumeration value="FR" />
+              <xs:enumeration value="DE" />
+              <xs:enumeration value="ES" />
+              <xs:enumeration value="UK" />
+              <xs:enumeration value="US" />
+            </xs:restriction>
+           </xs:simpleType>
+          </xs:element>
+         </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
 
+
+------------    
+<?xml version="1.0" encoding="utf-8" ?>
+<Address
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="SimpleAddress.xsd>
+  <Recipient>Mr.Walter C. Brown</Recipient>
+  <House>49</House>
+  <Street>Feather Stone</Street>
+  <Town>London</Town>
+  <PostCode>EC1Y 8SY Stone</PostCode>
+  <Country>UK</Country>
+  </Address>
+  
