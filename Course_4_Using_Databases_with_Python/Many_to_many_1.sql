@@ -25,3 +25,5 @@ INSERT INTO User (name, email) VALUES ("Sue", "Sue@tsugi.org");
 INSERT INTO Course (title) VALUES ("Python");
 INSERT INTO Course (title) VALUES ("SQL");
 INSERT INTO Course (title) VALUES ("PHP");
+
+
